@@ -59,6 +59,263 @@ footer
 
 
 
-/*==========  section  ==========*/
+/*==========  section modal ==========*/
+.modal-dialog
+  max-width: 673px
+  font-family: $default-font
 
-/*==========  section end  ==========*/
+.modal-header
+  width: 100%
+  flex-wrap: wrap
+  padding: 0 20px 19px
+  border-bottom: 1px solid #000
+  .btn-close
+    padding: 0
+    background: transparent
+    position: absolute
+    z-index: 1
+    opacity: 1
+    width: 14px
+    height: 14px
+    cursor: pointer
+    border: none
+      radius: 0
+    top: 28px
+    right: 25px
+    margin: 0
+    &:before, &:after
+      content: ''
+      background: #000
+      width: 1px
+      height: 100%
+      position: absolute
+      top: 0
+      left: 7px
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.modal-title
+  font-size: 40px
+  font-weight: bold
+
+.modal-content
+  border: none
+    radius: 0
+  background: #fff
+  padding: 58px 25px 86px
+  .phone
+    text-align: center
+    margin: 0 auto
+    color: #000
+    font-size: 40px
+    font-weight: bold
+    &:hover
+      color: $accent
+  .address
+    font-size: 20px
+    font-weight: 600
+    text-align: center
+    margin: 11px auto 42px
+    max-width: none
+    p
+      margin: 0 auto 30px
+      &:last-child
+        margin: 0 auto
+
+.schedule
+  text-align: center
+  color: $accent
+  margin: 0 auto 50px
+  font-weight: 600
+  font-size: 20px
+
+.modal-body
+  padding: 42px 20px 0
+  width: 100%
+
+.consent
+  margin: 24px 0 0
+  max-width: 362px
+  font-size: 14px
+  line-height: 16px
+  font-weight: 600
+  a
+    display: block
+    color: #000
+    font-weight: normal
+
+.form
+  max-width: 544px
+  width: 100%
+  margin: 12px auto 0
+  button
+    height: 60px
+
+#calculateModal
+  .modal-dialog
+    max-width: 1612px
+  .modal-header
+    padding: 0 56px 19px
+  .modal-content
+    padding: 42px 56px 50px
+
+.radio
+  position: relative
+  height: 80px
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  z-index: 1
+  padding: 11px 21px
+  font-weight: 600
+  cursor: pointer
+
+.radio-icon
+  @include d-flex
+  width: 30px
+  height: 30px
+  margin: 0 0 7px
+  img
+    max-height: 100%
+
+.inp-radio
+  cursor: pointer
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  border: 1px solid #000
+  padding: 11px 21px
+  z-index: -1
+  &:checked
+    background: $accent
+    border-color: $accent
+    ~ .radio-text
+      color: #fff
+    ~ .radio-icon
+      filter: brightness(0) invert(1)
+
+.list-radio
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 -9px
+  li
+    margin: 0 0 17px 0
+    width: 50%
+    padding: 0 9px
+    &:last-child
+      margin-right: 0
+
+.form-calculate
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+  .form-group
+    max-width: 27%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin: 0
+  .form-group-center
+    max-width: 32%
+  .form-group-last
+    max-width: 30%
+  button[type="submit"]
+    height: 60px
+
+.form-col
+  margin: 0 0 20px
+  &:last-child
+    margin: 0
+  &__head
+    width: 100%
+    margin: 0 0 20px
+    font-size: 20px
+
+.list-radio-col-4
+  text-align: center
+  li
+    width: 25%
+    align-items: center
+  .radio
+    align-items: center
+    text-align: center
+    height: 50px
+
+.box-description
+  margin: 6px 0 0
+  line-height: 22px
+  font-size: 16px
+  padding: 0 0 0 20px
+
+.form-group-last
+  .form-col
+    height: 100%
+    display: flex
+    flex-direction: column
+  .form-col__body
+    margin: auto 0 17px
+  .form-col__head
+    margin: 0 0 auto
+
+.box-scroll-vertical
+  width: 100%
+  max-height: 445px
+  overflow-y: auto
+  padding: 0 22px 0 0
+  &::-webkit-scrollbar
+    width: 15px
+  &::-webkit-scrollbar-track
+    background: #F1F1F1
+    border-radius: 10px
+  &::-webkit-scrollbar-thumb
+    border-radius: 10px
+    background: #C1C1C1
+    border: 3px solid #F1F1F1
+
+.list-checkbox
+  li
+    width: 100%
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+
+.checkbox
+  width: 100%
+  margin: 0
+  position: relative
+  z-index: 1
+  font-weight: 600
+  font-size: 16px
+  color: #000
+  display: flex
+  align-items: center
+  border: 1px solid #000
+  padding: 18.5px 20px
+  cursor: pointer
+
+.inp-check
+  display: none
+  &:checked
+    ~ .checkbox-custom
+      background: $accent
+      border-color: $accent
+
+.checkbox-custom
+  width: 21px
+  height: 21px
+  min-width: 21px
+  margin: 0 33px 0 0
+  border: 1px solid #000
+
+/*==========  section modal end  ==========*/

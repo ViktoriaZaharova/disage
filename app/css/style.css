@@ -71,39 +71,36 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0;
+  padding: 26px 30px 9px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  border: none;
+  border: 1px solid #000000;
     border-radius: 0;
-  width: 100%; }
+  width: 100%;
+  height: 60px;
+  color: #000; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-    color: inherit; }
+    color: #747474; }
   input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-    color: inherit; }
+    color: #747474; }
   input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-    color: inherit; }
+    color: #747474; }
   input::placeholder, textarea::placeholder, select::placeholder {
-    color: inherit; }
-    input::-webkit-input-placeholder:hover, input::-webkit-input-placeholder:focus, textarea::-webkit-input-placeholder:hover, textarea::-webkit-input-placeholder:focus, select::-webkit-input-placeholder:hover, select::-webkit-input-placeholder:focus {
-      outline: none;
-      -webkit-box-shadow: none;
-              box-shadow: none; }
-    input::-moz-placeholder:hover, input::-moz-placeholder:focus, textarea::-moz-placeholder:hover, textarea::-moz-placeholder:focus, select::-moz-placeholder:hover, select::-moz-placeholder:focus {
-      outline: none;
-      box-shadow: none; }
-    input::-ms-input-placeholder:hover, input::-ms-input-placeholder:focus, textarea::-ms-input-placeholder:hover, textarea::-ms-input-placeholder:focus, select::-ms-input-placeholder:hover, select::-ms-input-placeholder:focus {
-      outline: none;
-      box-shadow: none; }
-    input::placeholder:hover, input::placeholder:focus, textarea::placeholder:hover, textarea::placeholder:focus, select::placeholder:hover, select::placeholder:focus {
-      outline: none;
-      -webkit-box-shadow: none;
-              box-shadow: none; }
+    color: #747474; }
+  input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 label {
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin: 0 0 24px; }
+  label:last-child {
+    margin: 0; }
 
 button, .btn {
   outline: none;
@@ -146,7 +143,27 @@ button, .btn {
   background: #03B3DA; }
   .btn-accent:hover {
     background: #676767;
-    color: inherit; }
+    color: #fff; }
+    .btn-accent:hover .btn-icon {
+      stroke: #fff; }
+
+.btn-icon {
+  width: 30px;
+  height: 16px;
+  stroke: #fff;
+  fill: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.btn-text {
+  margin: 0 auto; }
 
 .btn-border-white {
   color: #fff;
@@ -355,3 +372,24 @@ a.color-accent:hover {
       .list-social li a:hover {
         background: #03B3DA;
         border-color: #03B3DA; }
+
+.nav-tabs {
+  border: none;
+  font-size: 20px;
+  font-weight: 500; }
+  .nav-tabs .nav-item {
+    margin: 0 49px 0 0; }
+    .nav-tabs .nav-item:last-child {
+      margin: 0; }
+  .nav-tabs .nav-link {
+    padding: 0;
+    border: none;
+      border-radius: 0;
+    margin: 0;
+    color: #000;
+    border: none; }
+    .nav-tabs .nav-link:hover {
+      color: #03B3DA; }
+    .nav-tabs .nav-link.active {
+      color: #03B3DA;
+      text-decoration: underline; }

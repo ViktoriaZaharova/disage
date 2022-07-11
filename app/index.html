@@ -319,7 +319,7 @@
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh ...</p>
         </div>
 
-        <a href="#" class="btn btn-md btn-border-white font-400">Подробнее</a>
+        <a href="#" class="btn btn-md btn-border-white font-400" data-bs-toggle="modal" data-bs-target="#showroomModal">Подробнее</a>
       </div>
     </div>
   </div>
@@ -468,15 +468,29 @@
       </div>
       <div class="col-12 col-md-4 col-lg-4 order-1">
         <div class="footer-contacts">
-          <a href="#" class="color-white link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать звонок</a>
+          <a href="#" class="color-white link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
+            звонок</a>
           <a href="tel:+74951757273" class="phone color-white">+7 (495) 175 72 73</a>
-          <a href="#" class="color-accent link-calculate" data-bs-toggle="modal" data-bs-target="#calculateModal">Расчет стоимости</a>
+          <a href="#" class="color-accent link-calculate" data-bs-toggle="modal" data-bs-target="#calculateModal">Расчет
+            стоимости</a>
           <ul class="list-social my-ul">
-            <li><a href="#"><svg class="svg-icon"><use xlink:href="img/sprite.svg#telegram"></use></svg></a></li>
-            <li><a href="#"><svg class="svg-icon"><use xlink:href="img/sprite.svg#vk"></use></svg></a></li>
-            <li><a href="#"><svg class="svg-icon"><use xlink:href="img/sprite.svg#youtube"></use></svg></a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a></li>
           </ul>
-          <a href="#" class="color-white" target="_blank">Политика в отношении обработки  персональных данных</a>
+          <a href="#" class="color-white" target="_blank">Политика в отношении обработки персональных данных</a>
         </div>
       </div>
     </div>
@@ -489,15 +503,27 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title text-center w-100">Заказать звонок</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="ФИО" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Телефон" name="phone" required>
+          </label>
+          <button type="submit" class="btn btn-lg w-100 btn-accent">
+            <span class="btn-text">Заказать звонок</span>
+            <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></span>
+          </button>
+
+          <div class="consent">
+            Нажимая кнопку отправить вы соглашаетесь
+            <a href="#" class="text-decoration" target="_blank">с политикой персональных данных</a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -507,15 +533,683 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Заказать звонок</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tvs-tab" data-bs-toggle="tab" data-bs-target="#tvs" type="button"
+                    role="tab" aria-controls="tvs" aria-selected="true">Встроенные телевизоры
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="cinema-tab" data-bs-toggle="tab" data-bs-target="#cinema" type="button"
+                    role="tab" aria-controls="cinema" aria-selected="false">Домашние кинотеатры
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="house-tab" data-bs-toggle="tab" data-bs-target="#house" type="button"
+                    role="tab" aria-controls="house" aria-selected="false">Умный дом
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-body">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tvs" role="tabpanel" aria-labelledby="tvs-tab">
+            <form method="post" class="form-calculate">
+              <div class="form-group">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>1. Выберите тип объекта</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" checked>
+                          <span class="radio-icon"><img src="img/home-icon.png" alt=""></span>
+                          <span class="radio-text">Дом</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-icon"><img src="img/couch-icon.png" alt=""></span>
+                          <span class="radio-text">Кваритира</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-icon"><img src="img/chair-icon.png" alt=""></span>
+                          <span class="radio-text">Офис</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>2. Выберите тип помещения</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" checked>
+                          <span class="radio-text">Гостинная</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Ванная</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Терраса</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Кухня</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-group-center">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>3. Выберите диагональ</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio list-radio-col-4 my-ul">
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3" checked>
+                          <span class="radio-text">24</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">32</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">43</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3" checked>
+                          <span class="radio-text">50</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">55</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">65</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3" checked>
+                          <span class="radio-text">75</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">85</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">98</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>4. Выберите материал</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio4" checked>
+                          <span class="radio-text">Стекло</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio4">
+                          <span class="radio-text">Зеркало</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>5. Выберите размер зеркала</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label>
+                          <input type="text" name="width" placeholder="Ширина">
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="text" name="height" placeholder="Высота">
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-group-last">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>6. Контактные данные</h4>
+
+                    <div class="box-description">
+                      <p>Наш менеджер свяжется с вами и
+                        предоставит индивидуальный расчет</p>
+                    </div>
+                  </div>
+
+                  <label>
+                    <input type="text" placeholder="ФИО" name="name">
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Телефон" name="phone" required>
+                  </label>
+
+                  <div class="form-col__body">
+                    <button type="submit" class="btn btn-lg w-100 btn-accent">
+                      <span class="btn-text">Отправить</span>
+                      <span class="btn-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#next"></use></svg></span>
+                    </button>
+
+                    <div class="consent">
+                      Нажимая кнопку отправить вы соглашаетесь
+                      <a href="#" class="text-decoration" target="_blank">с политикой персональных данных</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="cinema" role="tabpanel" aria-labelledby="cinema-tab">
+            <form method="post" class="form-calculate">
+              <div class="form-group">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>1. Выберите тип объекта</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" checked>
+                          <span class="radio-icon"><img src="img/home-icon.png" alt=""></span>
+                          <span class="radio-text">Дом</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-icon"><img src="img/couch-icon.png" alt=""></span>
+                          <span class="radio-text">Кваритира</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-icon"><img src="img/chair-icon.png" alt=""></span>
+                          <span class="radio-text">Офис</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>2. Выберите тип помещения</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" checked>
+                          <span class="radio-text">Гостинная</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Ванная</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Терраса</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Кухня</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-group-center">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>3. Выберите диагональ</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio list-radio-col-4 my-ul">
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3" checked>
+                          <span class="radio-text">24</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">32</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">43</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3" checked>
+                          <span class="radio-text">50</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">55</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">65</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3" checked>
+                          <span class="radio-text">75</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">85</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio3">
+                          <span class="radio-text">98</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>4. Выберите материал</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio4" checked>
+                          <span class="radio-text">Стекло</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio align-items-center">
+                          <input type="radio" class="inp-radio" name="radio4">
+                          <span class="radio-text">Зеркало</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>5. Выберите размер зеркала</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label>
+                          <input type="text" name="width" placeholder="Ширина">
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="text" name="height" placeholder="Высота">
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-group-last">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>6. Контактные данные</h4>
+
+                    <div class="box-description">
+                      <p>Наш менеджер свяжется с вами и
+                        предоставит индивидуальный расчет</p>
+                    </div>
+                  </div>
+
+                  <label>
+                    <input type="text" placeholder="ФИО" name="name">
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Телефон" name="phone" required>
+                  </label>
+
+                  <div class="form-col__body">
+                    <button type="submit" class="btn btn-lg w-100 btn-accent">
+                      <span class="btn-text">Отправить</span>
+                      <span class="btn-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#next"></use></svg></span>
+                    </button>
+
+                    <div class="consent">
+                      Нажимая кнопку отправить вы соглашаетесь
+                      <a href="#" class="text-decoration" target="_blank">с политикой персональных данных</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="house" role="tabpanel" aria-labelledby="house-tab">
+            <form method="post" class="form-calculate">
+              <div class="form-group">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>1. Выберите тип объекта</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" checked>
+                          <span class="radio-icon"><img src="img/home-icon.png" alt=""></span>
+                          <span class="radio-text">Дом</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-icon"><img src="img/couch-icon.png" alt=""></span>
+                          <span class="radio-text">Кваритира</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-icon"><img src="img/chair-icon.png" alt=""></span>
+                          <span class="radio-text">Офис</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>2. Выберите тип помещения</h4>
+                  </div>
+
+                  <div class="form-col__body">
+                    <ul class="list-radio my-ul">
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" checked>
+                          <span class="radio-text">Гостинная</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Ванная</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Терраса</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">Кухня</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-group-center">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>3. Выберите функционал</h4>
+                    <div class="box-description">
+                      <p>Наш менеджер свяжется с вами и
+                        предоставит индивидуальный расчет</p>
+                    </div>
+                  </div>
+
+                  <div class="form-col__body">
+                    <div class="box-scroll-vertical">
+                      <ul class="list-checkbox my-ul">
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Освещение</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Климат</span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Безопасность</span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Система SOS</span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Sim-Sim контроль</span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Пожарная безопасность</span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Климат</span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Безопасность</span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label class="checkbox">
+                            <input type="checkbox" class="inp-check" name="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Система SOS</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-group-last">
+                <div class="form-col">
+                  <div class="form-col__head">
+                    <h4>4. Контактные данные</h4>
+
+                    <div class="box-description">
+                      <p>Наш менеджер свяжется с вами и
+                        предоставит индивидуальный расчет</p>
+                    </div>
+                  </div>
+
+                  <label>
+                    <input type="text" placeholder="ФИО" name="name">
+                  </label>
+                  <label>
+                    <input type="text" placeholder="Телефон" name="phone" required>
+                  </label>
+
+                  <div class="form-col__body">
+                    <button type="submit" class="btn btn-lg w-100 btn-accent">
+                      <span class="btn-text">Отправить</span>
+                      <span class="btn-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#next"></use></svg></span>
+                    </button>
+
+                    <div class="consent">
+                      Нажимая кнопку отправить вы соглашаетесь
+                      <a href="#" class="text-decoration" target="_blank">с политикой персональных данных</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="showroomModal" tabindex="-1" aria-labelledby="showroomModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center w-100">Адрес шоу-рума</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+        <div class="address">
+          <p>Москва, Золоторожский вал, 32,
+            строение 2, офис 11,
+            Римская, Площадь Ильича.</p>
+
+          <p>Бизнес центр AU-ROOM.</p>
+        </div>
+        <div class="schedule">
+          <p>с 10:00 до 19:00</p>
+          <p>понедельник–пятница</p>
+        </div>
+
+        <a href="tel:+74951757273" class="phone">+7 (495) 175 72 73</a>
       </div>
     </div>
   </div>
@@ -527,6 +1221,9 @@
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/jquery.accordionSlider.min.js"></script>
 <script src="js/common.js"></script>
 
