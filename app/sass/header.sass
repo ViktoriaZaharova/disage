@@ -1,0 +1,107 @@
+@import "vars"
+
+/*==========  section header ==========*/
+header
+  padding: 28px 0 56px
+
+.logo
+  @include d-flex
+  max-width: 127px
+  width: 100%
+
+.header-box
+  text-align: center
+  margin: 0 58px
+  a
+    margin: 0 auto
+
+.phone
+  font-size: 22px
+  font-weight: bold
+
+.link-calculate
+  font-size: 22px
+  font-weight: bold
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 20px
+  font-weight: 500
+  margin: 0 99px 0 auto
+  li
+    margin: 0 48px 0 0
+    &:last-child
+      margin: 0
+    a
+      padding: 0
+      color: #fff
+      &:hover
+        color: $accent
+      &.active
+        color: $accent
+
+.btn-burger
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: flex-end
+  width: 56px
+  cursor: pointer
+  span
+    display: block
+    width: 100%
+    height: 0.75px
+    background: #fff
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+      width: 69%
+/*==========  section header end  ==========*/
+
+
+
+/*==========  section mobile-menu ==========*/
+.mobile-menu
+  position: fixed
+  right: -100%
+  top: 0
+  z-index: 5
+  height: 100%
+  max-width: 350px
+  background: #000
+  color: #fff
+  padding: 30px 20px
+  transition: .7s ease
+  &__close
+    width: 24px
+    height: 24px
+    position: relative
+    margin: 0 0 20px auto
+    cursor: pointer
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 12px
+      top: 0
+      width: 1px
+      height: 100%
+      background: #ffff
+      border-radius: 3px
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+  .header-box
+    margin: 20px auto 30px
+  .menu
+    width: 100%
+    margin: 0 0 20px
+    li
+      width: 100%
+      margin: 0 0 20px
+  .logo
+    max-width: none
+    margin: 0 auto 30px
+/*==========  section mobile-menu end  ==========*/

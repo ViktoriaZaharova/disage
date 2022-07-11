@@ -1,0 +1,306 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #000
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  border: none
+    radius: 0
+  width: 100%
+
+  &::placeholder
+    color: inherit
+
+    &:hover, &:focus
+      outline: none
+      box-shadow: none
+
+
+label
+  display: block
+  width: 100%
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+    radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-weight: bold
+  font-size: 13px
+  padding: 0 30px
+  width: fit-content
+  height: 32px
+
+.btn-accent
+  color: #fff
+  background: $accent
+
+  &:hover
+    background: $grey
+    color: inherit
+
+.btn-border-white
+  color: #fff
+  border: 1px solid #FFFFFF
+  &:hover
+    background: $accent
+    border-color: $accent
+    color: #fff
+    font-weight: bold
+
+.btn-md
+  height: 58px
+  padding: 0 67px
+  font-size: 20px
+
+.btn-lg
+  height: 81px
+  font-size: 28px
+  font-weight: bold
+
+.btn.w-100
+  width: 100%
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+.container
+  max-width: 1670px
+  padding: 0 26.5px
+
+.row
+  margin: 0 -26.5px
+  >*
+    padding: 0 26.5px
+
+.box-text
+  line-height: 18px
+  font-size: 16px
+
+h2
+  font-size: 40px
+  font-weight: bold
+  line-height: 48px
+
+h3
+  font-size: 20px
+  font-weight: bold
+  width: 100%
+
+.mb-40
+  margin-bottom: 40px
+
+.mb-60
+  margin-bottom: 60px
+
+.font-400
+  font-weight: 400
+
+
+//colors
+.color-black
+  color: #000
+
+a.color-black
+  &:hover
+    color: $accent
+
+.color-white
+  color: #ffffff
+
+a.color-white
+  &:hover
+    color: $accent
+
+.color-accent
+  color: $accent
+
+a.color-accent
+  &:hover
+    color: $grey
+
+
+.bg-light-grey
+  background: #F0F0F0
+
+.bg-black
+  background: #000000
+  color: #fff
+
+.text-decoration
+  text-decoration: underline
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  display: flex
+  align-items: center
+  list-style: none
+  padding: 0
+  position: relative
+  bottom: 0
+  margin: 0 auto
+  li
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 24px 0 0
+    width: 10px
+    height: 10px
+    background: #BABABA
+    border-radius: 50%
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: $accent
+    height: 10px
+    width: 67px
+    border-radius: 12px
+
+.slick-arrow
+  position: relative
+  opacity: 1
+  z-index: 1
+  border: none
+    radius: 0
+  @include d-flex
+  width: 30px
+  height: 16px
+  fill: none
+  stroke: #000
+  transition: .3s ease
+  background: transparent
+  padding: 0
+
+  &:hover
+    stroke: $accent
+
+.slider-nav
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .slick-next
+    order: 1
+
+.list-social
+  margin: 24px 0
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  li
+    margin: 0 13px 0 0
+    a
+      width: 38px
+      height: 38px
+      border: 1px solid #fff
+      padding: 10px 5px
+      @include d-flex
+      fill: #fff
+      &:hover
+        background: $accent
+        border-color: $accent
