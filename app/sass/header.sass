@@ -1,7 +1,7 @@
 @import "vars"
 
 /*==========  section header ==========*/
-header
+.header-top
   padding: 28px 0 56px
 
 .logo
@@ -58,6 +58,30 @@ header
     &:last-child
       margin: 0
       width: 69%
+
+.header-bottom
+  padding: 24px 0
+  border-top: 1px solid #FFFFFF
+
+.submenu
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+  font-size: 20px
+  font-weight: 500
+  li
+    margin: 0 56px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      &:hover
+        color: $accent
+        text-decoration: underline
+      &.active
+        color: $accent
+        text-decoration: underline
 /*==========  section header end  ==========*/
 
 
@@ -69,6 +93,7 @@ header
   top: 0
   z-index: 5
   height: 100%
+  overflow-y: auto
   max-width: 350px
   background: #000
   color: #fff

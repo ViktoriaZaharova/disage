@@ -1,5 +1,5 @@
 /*==========  section header ==========*/
-header {
+.header-top {
   padding: 28px 0 56px; }
 
 .logo {
@@ -79,6 +79,37 @@ header {
       margin: 0;
       width: 69%; }
 
+.header-bottom {
+  padding: 24px 0;
+  border-top: 1px solid #FFFFFF; }
+
+.submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 500; }
+  .submenu li {
+    margin: 0 56px 0 0; }
+    .submenu li:last-child {
+      margin: 0; }
+    .submenu li a {
+      color: #fff; }
+      .submenu li a:hover {
+        color: #03B3DA;
+        text-decoration: underline; }
+      .submenu li a.active {
+        color: #03B3DA;
+        text-decoration: underline; }
+
 /*==========  section header end  ==========*/
 /*==========  section mobile-menu ==========*/
 .mobile-menu {
@@ -87,6 +118,7 @@ header {
   top: 0;
   z-index: 5;
   height: 100%;
+  overflow-y: auto;
   max-width: 350px;
   background: #000;
   color: #fff;

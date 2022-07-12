@@ -1,41 +1,399 @@
 /*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1650px) {
+  .why-trusted-images-slider {
+    min-width: auto; }
+    .why-trusted-images-slider__item {
+      min-width: auto; }
+  .why-trusted-navigation-slider {
+    min-width: auto; }
+  .showroom h2 {
+    font-size: 86px; } }
+
+@media only screen and (max-width: 1600px) {
+  .as-panel__content {
+    padding: 20px 30px 40px; }
+  .as-panel.as-opened .as-panel__content {
+    padding: 10px 70px 70px; }
+  .why-trusted-navigation-slider, .why-trusted-images-slider {
+    padding: 0; }
+  .why-trusted-navigation-slider__item {
+    font-size: 14px; }
+  footer .phone {
+    font-size: 40px; } }
+
+@media only screen and (max-width: 1460px) {
+  .as-panel.as-opened .as-panel__content {
+    padding: 10px 53px 50px; }
+    .as-panel.as-opened .as-panel__content h3 {
+      font-size: 40px; }
+    .as-panel.as-opened .as-panel__content .box-text {
+      font-size: 18px; }
+  .showroom h2 {
+    font-size: 70px; }
+  .showroom .box-text {
+    font-size: 22px;
+    line-height: normal;
+    max-width: none; }
+  .nav-tabs {
+    font-size: 18px; }
+    .nav-tabs .nav-item {
+      margin: 0 25px 0 0; } }
+
+@media only screen and (max-width: 1320px) {
+  .header-top {
+    padding: 20px 0; }
+  .link-calculate {
+    font-size: 18px; }
+  .header-box {
+    margin: 0 30px; }
+  .menu {
+    font-size: 18px;
+    margin: 0 30px 0 auto; }
+  .why-trusted-navigation-slider__item {
+    font-size: 12px; }
+  .counter-slide {
+    margin: 30px 0;
+    font-size: 22px; }
+  footer {
+    padding: 50px 0; }
+    footer .phone {
+      font-size: 34px; }
+    footer .link-calculate {
+      font-size: 26px; }
+  .form-calculate .form-group {
+    max-width: 33.3%; } }
+
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  .as-panel.as-opened .as-panel__content {
+    padding: 10px 15px 30px; }
+    .as-panel.as-opened .as-panel__content h3 {
+      font-size: 30px; }
+  .as-panel__content {
+    padding: 20px 15px; }
+  .container {
+    padding: 0 15px; }
+  .row {
+    margin: 0 -15px; }
+    .row > * {
+      padding: 0 15px; }
+  .mb-60 {
+    margin-bottom: 30px; }
+  .mb-40 {
+    margin-bottom: 20px; }
+  .menu li {
+    margin: 0 20px 0 0; }
+  .btn-burger {
+    width: 40px; }
+  .phone {
+    font-size: 18px; }
+  .why-trusted-navigation {
+    padding: 20px 0; }
+  .why-trusted-slider h3 {
+    margin: 0 0 30px;
+    font-size: 22px; }
+  .why-trusted-slider .box-text {
+    font-size: 16px;
+    line-height: normal; }
+  .why-trusted-navigation-slider__item {
+    max-width: 300px;
+    font-size: 14px; }
+  .showroom {
+    padding: 400px 0 100px; }
+    .showroom h2 {
+      font-size: 60px; }
+  .btn-lg {
+    height: 70px;
+    font-size: 22px; }
+  .projects {
+    padding: 60px 0; }
+  .projects-slider .slide {
+    padding: 0 15px; }
+  .projects-slider .slick-list {
+    margin: 0 -15px; }
+  .projects-box__image {
+    height: 250px; }
+  .projects-box__body {
+    padding: 20px; }
+  .projects-box__head {
+    padding: 15px 20px; }
+  .projects-box .box-text {
+    font-size: 16px;
+    line-height: normal; }
+  .projects-box__title {
+    font-size: 20px;
+    line-height: normal;
+    max-width: none; }
+  .nav-tabs {
+    width: 100%;
+    margin: 20px 0 0; }
+  .submenu {
+    font-size: 16px; }
+  .about-in-number {
+    font-size: 20px; }
+  .reviews-box {
+    padding: 20px; }
+    .reviews-box h4 {
+      font-size: 20px; }
+    .reviews-box__name {
+      padding: 0 0 0 10px; }
+    .reviews-box__head {
+      margin: 0 0 15px; }
+    .reviews-box__footer {
+      margin: 20px 0 0; }
+    .reviews-box__body {
+      font-size: 16px;
+      line-height: normal; }
+  .reviews-slider .slide, .certificates-slider .slide {
+    padding: 0 15px; }
+  .reviews-slider .slick-list, .certificates-slider .slick-list {
+    margin: 0 -15px; }
+  .certificates-slider__nav {
+    margin: 30px auto 0; }
+  .partners-box {
+    font-size: 22px;
+    height: 110px; } }
 
-/* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  header .menu, header .link-calculate {
+    display: none; }
+  .header-box {
+    margin: 0 auto; }
+  .as-panel__content .box-text {
+    font-size: 15px;
+    line-height: normal; }
+  .as-panel__content h3 {
+    margin: 0 0 10px;
+    font-size: 18px; }
+  .as-panel.as-opened .as-panel__content h3 {
+    font-size: 24px; }
+  .as-panel.as-opened .as-panel__content .box-text {
+    font-size: 15px;
+    line-height: normal; }
+  .why-trusted-slider {
+    margin: 0 0 30px; }
+    .why-trusted-slider .box-text {
+      max-width: none; }
+  .why-trusted__description {
+    width: 100%; }
+    .why-trusted__description:before {
+      display: none; }
+  .why-trusted {
+    padding: 60px 0; }
+    .why-trusted h2 {
+      max-width: none;
+      margin: 0 0 20px; }
+  .why-trusted-images-slider__item {
+    height: auto; }
+  .showroom {
+    padding: 300px 0 60px; }
+    .showroom h2 {
+      text-align: center;
+      margin: 0 auto 20px;
+      font-size: 40px; }
+    .showroom .box-text {
+      font-size: 18px;
+      text-align: center; }
+    .showroom .btn {
+      margin: 20px auto 0; }
+  .btn-md {
+    font-size: 18px;
+    height: 50px; }
+  .projects-slider {
+    margin: 0 0 30px; }
+    .projects-slider__nav {
+      margin: 0 auto 20px; }
+  footer .logo {
+    margin: 0 auto 20px; }
+  .address {
+    max-width: none;
+    text-align: center;
+    margin: 0 auto 30px; }
+  .footer-box {
+    margin: 0 0 20px;
+    font-size: 16px; }
+  .footer-contacts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .list-social {
+    margin: 20px auto; }
+  .form-calculate .form-group {
+    max-width: none;
+    margin: 0 0 30px; }
+    .form-calculate .form-group:last-child {
+      margin: 0; }
+  .form-col {
+    margin: 0 0 30px; }
+  .form-group-last .form-col__head {
+    margin: 0 0 20px; }
+  .about {
+    padding: 60px 0 40px; }
+    .about h2 {
+      margin: 0 0 20px; }
+  .about-description {
+    font-size: 16px;
+    line-height: normal; }
+    .about-description p {
+      margin: 0 0 20px; }
+  .about-box {
+    padding: 0 0 15px;
+    margin: 0 0 30px; }
+  .about-in-number {
+    margin: 0 0 20px; }
+  .benefits__number {
+    font-size: 70px; }
+  .reviews {
+    padding: 60px 0 50px; }
+  .certificates h2, .partners h2 {
+    margin: 0 0 30px; }
+  .partners {
+    padding: 60px 0 40px; } }
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/ }
+  h2 {
+    line-height: normal;
+    font-size: 30px; }
+  .link-all {
+    margin: 0 auto; }
+  .projects h2 {
+    margin: 0 auto 20px; }
+  .header-bottom {
+    display: none; }
+  .home {
+    min-height: 500px;
+    padding: 100px 0; }
+    .home .box-text {
+      font-size: 20px;
+      line-height: normal; }
+  h1 {
+    font-size: 70px;
+    margin: 0 0 30px; }
+  .team-box h4 {
+    font-size: 20px; }
+  .team-box__body {
+    padding: 20px; }
+  .team-box__footer {
+    margin: 20px 0 0;
+    padding: 15px 0 0; } }
 
-/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  .as-panel__content {
+    padding: 15px;
+    display: none; }
+    .as-panel__content h3 {
+      font-size: 14px; }
+    .as-panel__content .box-text {
+      font-size: 12px; }
+    .as-panel__content .btn {
+      margin: 15px 0 0; }
+  .as-panel.as-opened .as-panel__content {
+    display: block;
+    padding: 15px; }
+    .as-panel.as-opened .as-panel__content h3 {
+      font-size: 16px; }
+    .as-panel.as-opened .as-panel__content .box-text {
+      font-size: 14px; }
+  h2 {
+    font-size: 24px; }
+  .why-trusted-navigation-slider__item {
+    max-width: 200px; }
+  .slick-dots .slick-active {
+    width: 50px; }
+  .btn-lg {
+    height: 60px;
+    font-size: 18px; }
+  footer .phone {
+    font-size: 28px; }
+  footer .link-calculate {
+    font-size: 20px; }
+  .link-callback {
+    font-size: 18px; }
+  .schedule {
+    margin: 0 auto 30px;
+    font-size: 18px; }
+  .modal-content {
+    padding: 30px 20px; }
+    .modal-content .phone {
+      font-size: 24px; }
+    .modal-content .address {
+      margin: 10px auto 20px;
+      font-size: 18px; }
+      .modal-content .address p {
+        margin: 0 0 20px; }
+  .modal-title {
+    font-size: 24px;
+    line-height: normal; }
+  .modal-header {
+    padding: 0 0 15px; }
+  .modal-body {
+    padding: 15px 0 0; }
+  #calculateModal .modal-content {
+    padding: 30px 20px; }
+  #calculateModal .modal-header {
+    padding: 0 0 15px; }
+  .form-col__head {
+    font-size: 18px; }
+  .box-scroll-vertical {
+    max-height: 300px; }
+  .form {
+    margin: 0 auto; }
+  input, textarea, select {
+    padding: 15px;
+    font-size: 16px; }
+  label {
+    margin: 0 0 16px; }
+  .btn {
+    padding: 0 15px; }
+  .btn-icon {
+    width: 24px;
+    height: 12px; }
+  .why-trusted {
+    padding: 60px 0 40px; }
+  .showroom h2 {
+    font-size: 34px; }
+  .showroom .btn {
+    max-width: none;
+    width: 100%; }
+  .radio {
+    padding: 10px; }
+  h1 {
+    font-size: 50px; }
+  .home {
+    padding: 60px 0;
+    min-height: 400px; }
+    .home .box-text {
+      font-size: 18px; } }
+
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .mobile-menu {
+    max-width: 280px; }
+  .slick-dots li {
+    margin: 0 10px 0 0; }
+  h1 {
+    font-size: 40px; } }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
-
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/ }
+@media only screen and (max-width: 420px) {
+  header .header-box {
+    display: none; }
+  header .logo {
+    margin: 0 auto 0 0; }
+  .why-trusted-navigation-slider__item {
+    font-size: 13px; }
+  .why-trusted__description {
+    font-size: 16px;
+    line-height: normal; }
+  .reviews-box__photo {
+    width: 50px;
+    height: 50px; }
+  .reviews-box__name {
+    width: calc(100% - 50px); }
+  .reviews-box h4 {
+    font-size: 18px;
+    max-width: none; }
+  .reviews-box .position {
+    margin: 5px 0 0;
+    font-size: 14px; } }
