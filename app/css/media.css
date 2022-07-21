@@ -37,7 +37,15 @@
   .nav-tabs {
     font-size: 18px; }
     .nav-tabs .nav-item {
-      margin: 0 25px 0 0; } }
+      margin: 0 25px 0 0; }
+  .completed-projects {
+    padding: 60px 0 0; }
+  .nav-tabs-portfolio {
+    margin: 30px 0 0; }
+    .nav-tabs-portfolio .nav-item {
+      margin: 0 30px 20px 0; }
+      .nav-tabs-portfolio .nav-item:last-child {
+        margin: 0 0 20px; } }
 
 @media only screen and (max-width: 1320px) {
   .header-top {
@@ -151,7 +159,19 @@
     margin: 30px auto 0; }
   .partners-box {
     font-size: 22px;
-    height: 110px; } }
+    height: 110px; }
+  .case-implementation {
+    padding: 50px 0 70px; }
+  .seo-content {
+    padding: 40px 0; }
+  .case-task .box-text {
+    font-size: 16px;
+    line-height: normal;
+    max-width: none; }
+  .all-projects {
+    padding: 80px 0; }
+  .all-projects-image {
+    max-width: 600px; } }
 
 @media only screen and (max-width: 992px) {
   header .menu, header .link-calculate {
@@ -251,7 +271,9 @@
   .certificates h2, .partners h2 {
     margin: 0 0 30px; }
   .partners {
-    padding: 60px 0 40px; } }
+    padding: 60px 0 40px; }
+  .case-task__image {
+    margin: 20px auto 0; } }
 
 @media only screen and (max-width: 768px) {
   h2 {
@@ -278,7 +300,11 @@
     padding: 20px; }
   .team-box__footer {
     margin: 20px 0 0;
-    padding: 15px 0 0; } }
+    padding: 15px 0 0; }
+  .all-projects {
+    padding: 60px 0; }
+  .all-projects-image {
+    max-width: 400px; } }
 
 @media only screen and (max-width: 576px) {
   .as-panel__content {
@@ -366,7 +392,22 @@
     padding: 60px 0;
     min-height: 400px; }
     .home .box-text {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .completed-projects .projects-box {
+    margin: 0 0 30px; }
+  .btn-activation {
+    margin: 30px auto 0; }
+  .all-projects-slider {
+    margin: 0 auto 30px; }
+    .all-projects-slider .slide {
+      margin: 0;
+      padding: 0 15px; }
+  .all-projects-image {
+    max-width: none; }
+  .column-2 {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; } }
 
 @media only screen and (max-width: 480px) {
   .mobile-menu {

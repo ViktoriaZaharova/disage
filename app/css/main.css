@@ -75,6 +75,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: auto;
     width: calc(100% - 376px); }
     .why-trusted__description:before {
       content: '';
@@ -149,7 +150,8 @@
   position: relative;
   color: #ffff;
   z-index: 1;
-  padding: 441px 0 180px; }
+  padding: 441px 0 180px;
+  overflow: hidden; }
   .showroom h2 {
     font-size: 101px;
     line-height: 1; }
@@ -458,6 +460,9 @@
     color: #747474;
     font-size: 18px; }
 
+.reviews-v2 {
+  padding: 105px 0 120px; }
+
 /*==========  section reviews end  ==========*/
 /*==========  section certificates ==========*/
 .certificates h2 {
@@ -521,8 +526,180 @@
     max-height: 100%; }
 
 /*==========  section partners end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  section home-portfolio ==========*/
+.home-portfolio {
+  background: url("../img/home-portfolio.jpg") no-repeat center;
+    background-size: cover; }
+
+.completed-projects {
+  padding: 107px 0 0; }
+  .completed-projects .projects-box {
+    height: auto;
+    margin: 0 0 53px 0; }
+    .completed-projects .projects-box:last-child {
+      margin: 0; }
+  .completed-projects .projects-slider__nav {
+    max-width: 1000px;
+    margin: 0 auto; }
+
+.nav-tabs-portfolio {
+  margin: 53px 0 0;
+  font-size: 25px; }
+  .nav-tabs-portfolio .nav-item {
+    margin: 0 144px 26px 0; }
+  .nav-tabs-portfolio .nav-link {
+    text-decoration: none;
+    color: #000000; }
+    .nav-tabs-portfolio .nav-link.active {
+      background: transparent;
+      color: #03B3DA; }
+
+.btn-activation {
+  margin: 52px auto 0;
+  max-width: 499px;
+  width: 100%; }
+
+/*==========  section home-portfolio end  ==========*/
+/*==========  section home-case ==========*/
+.home-case {
+  background: url("../img/case-home.jpg") no-repeat center;
+    background-size: cover; }
+
+.case-task {
+  padding: 59px 0 50px; }
+  .case-task .box-text {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 22px; }
+  .case-task h2 {
+    margin: 0 0 27px; }
+
+.case-implementation {
+  padding: 50px 0 237px; }
+
+.seo-content {
+  margin: 87px 0 0;
+  width: 100%;
+  padding: 65px 0 70px;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000; }
+  .seo-content .box-text {
+    max-width: none; }
+
+.case-video-section {
+  background: url("../img/video-preview.jpeg") no-repeat center;
+    background-size: cover; }
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.all-projects {
+  padding: 120px 0; }
+
+.all-projects-slider {
+  margin: 0 0 77px; }
+  .all-projects-slider .slide {
+    margin: 0 22px; }
+  .all-projects-slider .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+.all-projects-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 726px;
+  width: 100%; }
+
+/*==========  section home-case end  ==========*/
+/*==========  section home-tvs ==========*/
+.home-tvs {
+  background: url("../img/tvs-bg.jpg") no-repeat center;
+    background-size: cover; }
+
+.projects-v2 {
+  padding: 102px 0 0; }
+
+/*==========  section home-tvs end  ==========*/
+/*==========  section case-video-section ==========*/
+.case-video-section {
+  background: url("../img/tvs-showdown.jpeg") no-repeat center;
+    background-size: cover; }
+  .case-video-section .btn {
+    margin: 74px 0 0;
+    max-width: 252px;
+    height: 58px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 20px; }
+
+.technology-images-slider {
+  padding: 0 0 0 60px;
+  min-width: 1288px; }
+
+.technology-images-slider__item {
+  min-width: 1288px;
+  height: 552px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden; }
+
+.counter-slide-v2 {
+  margin: 0; }
+
+.technology-slider__item {
+  position: relative;
+  padding: 0 0 27px;
+  border-bottom: 1px solid #fff; }
+  .technology-slider__item h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 27px 0 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .technology-slider__item .box-text {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 27px 0 0;
+    display: none;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+
+.technology-slider {
+  max-height: 500px; }
+  .technology-slider .slick-current .technology-slider__item .box-text {
+    display: block; }
+  .technology-slider .slick-current .technology-slider__item h3 {
+    font-size: 25px;
+    color: #03B3DA; }
+
+/*==========  section case-video-section end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
 /*==========  section  ==========*/

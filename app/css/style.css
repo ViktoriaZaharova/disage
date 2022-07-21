@@ -364,6 +364,9 @@ a.color-accent:hover {
         -ms-flex-order: 1;
             order: 1; }
 
+.slider-nav-white .slick-arrow {
+  stroke: #fff; }
+
 .list-social {
   margin: 24px 0;
   display: -webkit-box;
@@ -416,3 +419,8 @@ a.color-accent:hover {
     .nav-tabs .nav-link.active {
       color: #03B3DA;
       text-decoration: underline; }
+
+.column-2 {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2; }
