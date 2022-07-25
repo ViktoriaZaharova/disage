@@ -853,11 +853,270 @@
     background-size: cover; }
 
 /*==========  section home-tvs end  ==========*/
+/*==========  section home-house ==========*/
+.home-house {
+  background: url("../img/house-bg.jpeg") no-repeat center;
+    background-size: cover; }
+
+.house-video-section {
+  background: url("../img/showroom-tvs.jpg") no-repeat center;
+    background-size: cover; }
+
+/*==========  section home-house end  ==========*/
 /*==========  section  ==========*/
+.homescript-slider-images {
+  height: 46%;
+  min-height: 46%;
+  position: relative; }
+
+.homescript-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-filter: blur(10px) grayscale(1);
+          filter: blur(10px) grayscale(1);
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: opacity, -webkit-filter;
+  transition-property: opacity, -webkit-filter;
+  transition-property: filter, opacity;
+  transition-property: filter, opacity, -webkit-filter; }
+  .homescript-image .rt-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left center;
+       object-position: left center; }
+
+.homescript-image--active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 1;
+  -webkit-filter: blur(0px) grayscale(0);
+          filter: blur(0px) grayscale(0); }
+
+.homescript-slider-link {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  padding: 0 34px;
+  max-height: 88px;
+  min-height: 88px;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: background, max-height, min-height, padding;
+  transition-property: background, max-height, min-height, padding;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.rt-sys-icon {
+  width: 25px;
+  height: 14px;
+  stroke: #fff; }
+
+.homescript-slider-go-back {
+  display: none; }
+  .homescript-slider-go-back path {
+    -webkit-transition-duration: 0.03s;
+            transition-duration: 0.03s; }
+  .homescript-slider-go-back .rt-sys-icon {
+    display: block; }
+
+.homescript-slider-back {
+  -webkit-animation: 1s showArrow linear;
+          animation: 1s showArrow linear; }
+
+.homescript-slider-block--active .homescript-slider-go-back {
+  position: absolute;
+  left: 0;
+  bottom: 37px;
+  cursor: pointer;
+  display: block;
+  -webkit-animation: 0.5s showArrow linear;
+          animation: 0.5s showArrow linear; }
+
+.homescript-slider-block--active .homescript-header {
+  min-height: auto; }
+  .homescript-slider-block--active .homescript-header h4 {
+    color: #03B3DA;
+    font-weight: bold;
+    margin: 0; }
+
+.homescript-slider-block--active .homescript-slider-back {
+  display: none; }
+
+.homescript-slider-block--active .homescript-slider-link {
+  padding-top: 53px;
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100%;
+  max-height: 100%;
+  cursor: default;
+  background-blend-mode: multiply; }
+
+.homescript-slider-block--active .homescript-body-text {
+  opacity: 1; }
+
+.homescript-slider-block--active .homescript-body {
+  max-height: 800px;
+  min-height: 100%; }
+
+.homescript-body {
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: max-height;
+  transition-property: max-height; }
+
+.homescript-body-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  font-size: 16px;
+  line-height: 18px; }
+  .homescript-body-text ul li {
+    margin: 0 0 10px; }
+    .homescript-body-text ul li:last-child {
+      margin: 0; }
+  .homescript-body-text h3 {
+    font-weight: normal;
+    margin: 30px 0;
+    max-width: 300px;
+    line-height: 22px; }
+
+.homescript-slider-block {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-width: 25%;
+  max-width: 25%;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: height;
+  transition-property: height; }
+  .homescript-slider-block + .homescript-slider-block {
+    border-left: 1px solid rgba(255, 255, 255, 0.7); }
+
+.homescript-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: min-height;
+  transition-property: min-height;
+  min-height: 88px; }
+  .homescript-header h4 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 35px; }
+
+.homescript-image-main {
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  width: 100%;
+  display: block; }
+  .homescript-image-main .rt-img {
+    width: 100%; }
+
+.homescript-image-main--hide {
+  opacity: 0; }
+
+.homescript-slider-nav {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.smart-icon {
+  width: 80px;
+  height: 80px; }
+
+@-webkit-keyframes showArrow {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes showArrow {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  section smart-home-scenarios ==========*/
+.smart-home-scenarios {
+  padding: 103px 0 0; }
+
+.box-text-description {
+  margin: 30px 0;
+  font-size: 18px;
+  line-height: 22px; }
+
+/*==========  section smart-home-scenarios end  ==========*/
 /*==========  section  ==========*/
 /*==========  section end  ==========*/
