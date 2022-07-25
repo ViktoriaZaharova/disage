@@ -30,6 +30,11 @@
     .phone
       font-size: 40px
 
+  .technology-images-slider__item, .technology-images-slider
+    min-width: calc(100% + 25px)
+
+  .personal-cinema-tabs
+    max-width: 990px
 
 @media only screen and (max-width: 1460px)
   .as-panel.as-opened .as-panel__content
@@ -64,6 +69,19 @@
       &:last-child
         margin: 0 0 20px
 
+  .technology-slider__item .box-text
+    font-size: 16px
+    line-height: normal
+
+  .personal-cinema-tabs
+    max-width: 800px
+    margin: 0
+    padding: 0 20px
+
+  .personal-cinema-tabs
+    .nav-item
+      margin: 0
+
 @media only screen and (max-width: 1320px)
   .header-top
     padding: 20px 0
@@ -94,6 +112,15 @@
 
   .form-calculate .form-group
     max-width: 33.3%
+
+  .personal-cinema-tabs
+    max-width: 700px
+
+  .personal-cinema-navigation-slider
+    max-width: 270px
+
+  .personal-cinema-images__item
+    height: 550px
 
 
 @media only screen and (max-width: 1200px)
@@ -231,6 +258,40 @@
 
   .all-projects-image
     max-width: 600px
+
+  .technology-images-slider__item, .technology-images-slider
+    min-width: auto
+
+
+  .technology-images-slider
+    padding: 0
+
+  .why-trusted
+    padding: 60px 0
+
+  .personal-cinema-tabs
+    margin: 0
+    max-width: none
+    border-bottom-color: #868585
+    .nav-link
+      padding: 0 0 20px
+
+  .figure-border
+    display: none
+
+  .personal-cinema__content:before
+    height: 100%
+    right: -15px
+
+  .personal-cinema-navigation-slider
+    max-width: none
+    padding: 0
+    text-align: center
+    margin: 20px 0 10px
+    font-size: 15px
+
+  .personal-cinema h2
+    margin: 0 0 30px
 
 @media only screen and (max-width: 992px)
   header
@@ -403,6 +464,44 @@
   .all-projects-image
     max-width: 400px
 
+  .technology-images-slider__item
+    height: auto
+
+  .technology-images-slider
+    margin: 30px 0 0
+
+  .counter-slide
+    margin: 20px 0
+
+  .technology-slider .slick-current .technology-slider__item h3
+    font-size: 22px
+
+  .technology-slider__item .box-text
+    margin: 15px 0 0
+
+  .tab-content__left
+    max-width: none
+    width: 100%
+
+  .tab-content__right
+    max-width: none
+    width: 100%
+    padding: 0
+
+  .personal-cinema-images
+    margin: 20px 0 0
+    .slick-dots
+      margin: 20px 0 0
+
+  .personal-cinema-images__item
+    height: auto
+
+  .personal-cinema
+    padding: 60px 0 0
+
+  .personal-cinema__content
+    padding: 40px 0 30px
+
 @media only screen and (max-width: 576px)
   .as-panel__content
     padding: 15px
@@ -541,6 +640,23 @@
   .column-2
     column-count: 1
 
+  .case-video-section .btn
+    font-size: 18px
+    height: 45px
+    max-width: 300px
+
+  .personal-cinema-slider h3
+    font-size: 22px
+    margin: 0 0 25px
+
+  .personal-cinema-slider .box-text
+    font-size: 16px
+    line-height: normal
+
+  .personal-cinema-tabs
+    padding: 0 10px
+
+
 @media only screen and (max-width: 480px)
   .mobile-menu
     max-width: 280px
@@ -551,6 +667,8 @@
   h1
     font-size: 40px
 
+  .showroom h2
+    font-size: 28px
 
 @media only screen and (max-width: 420px)
   header
@@ -578,3 +696,10 @@
     .position
       margin: 5px 0 0
       font-size: 14px
+
+@media only screen and (min-width: 1200px)
+  .personal-cinema-navigation-slider
+    .slick-track
+      transform: none !important
+    .slick-list
+      height: 100% !important

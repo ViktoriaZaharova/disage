@@ -97,6 +97,7 @@ $('.technology-slider').slick({
     verticalSwiping: true,
     infinite: false,
     focusOnSelect: true,
+    adaptiveHeight: true,
     asNavFor: '.technology-images-slider',
 });
 
@@ -104,7 +105,6 @@ $('.technology-images-slider').slick({
     slidesToShow: 1,
     fade: true,
     arrows: false,
-    // asNavFor: '.technology-slider',
 });
 
 //auto counter total//
@@ -115,7 +115,6 @@ $('.counter-slide__default2').text("/ " + homeSlider1.slick("getSlick").slideCou
 homeSlider1.on('afterChange', function (event, slick, currentSlide) {
     $(".counter-slide__cp2").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
 });
-
 
 
 $('.projects-slider1').slick({
@@ -259,6 +258,631 @@ $('.all-projects-slider').slick({
     ]
 });
 
+$('.personal-cinema-images1').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.personal-cinema-slider1').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    asNavFor: '.personal-cinema-images1',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+});
+
+//auto counter total//
+let homeSlider2 = $('.personal-cinema-slider1');
+
+$('.counter-slide__default3').text("/" + homeSlider2.slick("getSlick").slideCount);
+
+homeSlider2.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp3").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+});
+
+$('.personal-cinema-navigation-slider1').slick({
+    slidesToShow: 4,
+    vertical: true,
+    arrows: false,
+    infinite: false,
+    focusOnSelect: true,
+    asNavFor: '.personal-cinema-images1, .personal-cinema-slider1',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                vertical: false,
+                infinite: true,
+            }
+        }
+    ]
+});
+
+
+$('.personal-cinema-images2').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.personal-cinema-slider2').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    asNavFor: '.personal-cinema-images2',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+});
+
+//auto counter total//
+let homeSlider3 = $('.personal-cinema-slider2');
+
+$('.counter-slide__default4').text("/" + homeSlider3.slick("getSlick").slideCount);
+
+homeSlider3.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp4").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+});
+
+$('.personal-cinema-navigation-slider2').slick({
+    slidesToShow: 4,
+    vertical: true,
+    arrows: false,
+    // infinite: false,
+    focusOnSelect: true,
+    asNavFor: '.personal-cinema-images2, .personal-cinema-slider2',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                vertical: false,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                vertical: false,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                vertical: false,
+            }
+        }
+    ]
+});
+
+
+$('.personal-cinema-images3').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.personal-cinema-slider3').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    asNavFor: '.personal-cinema-images3',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+});
+
+//auto counter total//
+let homeSlider4 = $('.personal-cinema-slider3');
+
+$('.counter-slide__default5').text("/" + homeSlider4.slick("getSlick").slideCount);
+
+homeSlider4.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp5").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+});
+
+$('.personal-cinema-navigation-slider3').slick({
+    slidesToShow: 4,
+    vertical: true,
+    arrows: false,
+    focusOnSelect: true,
+    asNavFor: '.personal-cinema-images3, .personal-cinema-slider3',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                vertical: false,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                vertical: false,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                vertical: false,
+            }
+        }
+    ]
+});
+
+
+
+
+
+
+
+$('.personal-cinema-images4').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.personal-cinema-slider4').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    asNavFor: '.personal-cinema-images4',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+});
+
+//auto counter total//
+let homeSlider5 = $('.personal-cinema-slider4');
+
+$('.counter-slide__default6').text("/" + homeSlider5.slick("getSlick").slideCount);
+
+homeSlider5.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp6").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+});
+
+$('.personal-cinema-navigation-slider4').slick({
+    slidesToShow: 5,
+    vertical: true,
+    arrows: false,
+    infinite: false,
+    focusOnSelect: true,
+    asNavFor: '.personal-cinema-images4, .personal-cinema-slider4',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                vertical: false,
+                infinite: true,
+            }
+        }
+    ]
+});
+
+//
+$('.personal-cinema-images5').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.personal-cinema-slider5').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    asNavFor: '.personal-cinema-images5',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+});
+
+//auto counter total//
+let homeSlider6 = $('.personal-cinema-slider5');
+
+$('.counter-slide__default7').text("/" + homeSlider6.slick("getSlick").slideCount);
+
+homeSlider6.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp7").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+});
+
+$('.personal-cinema-navigation-slider5').slick({
+    slidesToShow: 5,
+    vertical: true,
+    arrows: false,
+    infinite: false,
+    focusOnSelect: true,
+    asNavFor: '.personal-cinema-images5, .personal-cinema-slider5',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                vertical: false,
+                infinite: true,
+            }
+        }
+    ]
+});
+
+//
+$('.personal-cinema-images6').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.personal-cinema-slider6').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    asNavFor: '.personal-cinema-images6',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+});
+
+//auto counter total//
+let homeSlider7 = $('.personal-cinema-slider6');
+
+$('.counter-slide__default8').text("/" + homeSlider7.slick("getSlick").slideCount);
+
+homeSlider7.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp8").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+});
+
+$('.personal-cinema-navigation-slider6').slick({
+    slidesToShow: 5,
+    vertical: true,
+    arrows: false,
+    infinite: false,
+    focusOnSelect: true,
+    asNavFor: '.personal-cinema-images6, .personal-cinema-slider6',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                vertical: false,
+                infinite: true,
+            }
+        }
+    ]
+});
+
+
+//
+$('.personal-cinema-images7').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.personal-cinema-slider7').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    asNavFor: '.personal-cinema-images7',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+});
+
+//auto counter total//
+let homeSlider8 = $('.personal-cinema-slider7');
+
+$('.counter-slide__default9').text("/" + homeSlider8.slick("getSlick").slideCount);
+
+homeSlider8.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp9").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+});
+
+$('.personal-cinema-navigation-slider7').slick({
+    slidesToShow: 5,
+    vertical: true,
+    arrows: false,
+    infinite: false,
+    focusOnSelect: true,
+    asNavFor: '.personal-cinema-images7, .personal-cinema-slider7',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                vertical: false,
+                infinite: true,
+            }
+        }
+    ]
+});
+
+
+//
+$('.personal-cinema-images8').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    swipe: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.personal-cinema-slider8').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    asNavFor: '.personal-cinema-images8',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false
+            }
+        }
+    ]
+});
+
+//auto counter total//
+let homeSlider9 = $('.personal-cinema-slider8');
+
+$('.counter-slide__default10').text("/" + homeSlider9.slick("getSlick").slideCount);
+
+homeSlider9.on('afterChange', function (event, slick, currentSlide) {
+    $(".counter-slide__cp10").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+});
+
+$('.personal-cinema-navigation-slider8').slick({
+    slidesToShow: 5,
+    vertical: true,
+    arrows: false,
+    infinite: false,
+    focusOnSelect: true,
+    asNavFor: '.personal-cinema-images8, .personal-cinema-slider8',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                vertical: false,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                vertical: false,
+                infinite: true,
+            }
+        }
+    ]
+});
+
+
+
+//
+// $(document).ready(function () {
+//     $(".js-tab-trigger").click(function () {
+//         var id = $(this).attr('data-tab'),
+//             content = $('.js-tab-content[data-tab="' + id + '"]');
+//
+//         $('.js-tab-trigger.active').removeClass('active'); // 1
+//         $(this).addClass('active'); // 2
+//
+//         $('.js-tab-content.active').removeClass('active'); // 3
+//         content.addClass('active'); // 4
+//     });
+//
+//
+// });
+
 $('[name="phone"]').mask('+7 (999) 99-99-99');
 
 // animate number
@@ -311,4 +935,6 @@ $('.submenu li a').each(function () {
     }
 });
 // end
+
+
 
