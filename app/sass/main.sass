@@ -7,7 +7,7 @@
 .as-panel
   box-shadow: none
   overflow: hidden
-
+  transition: all .4s linear
   &:before
     content: ''
     position: absolute
@@ -17,24 +17,20 @@
     height: 100%
     background: rgba(0, 0, 0, 0.56)
     mix-blend-mode: multiply
-    transition: .3s ease
+    transition: all 1.2s linear
 
   &.as-opened
     &:before
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 100%)
       height: 444px
       mix-blend-mode: multiply
-
     .as-panel__content
       padding: 10px 155px 132px
-
       .btn
         display: flex
-
       h3
         font-size: 50px
         margin: 0 0 15px
-
       .box-text
         font-size: 20px
         max-width: 547px
@@ -47,21 +43,24 @@
     width: 100%
     padding: 20px 60px 100px
     color: #fff
-
+    transition: all 1.2s linear
     .btn
       display: none
       margin: 26px 0 0
 
     h3
       margin: 0 0 30px
+      transition: all 1s linear
 
     .box-text
       max-width: 239px
+      transition: all 1.2s linear
 
   .as-background
     width: 100%
     height: 100% !important
     object-fit: cover !important
+    transition: all .7s
 
 .as-shadow
   box-shadow: none
@@ -72,7 +71,7 @@
 
 /*==========  section why-trusted ==========*/
 .why-trusted
-  padding: 89px 0 80px
+  padding: 89px 0 20px
   position: relative
   overflow: hidden
 
@@ -616,9 +615,6 @@
   .slide
     margin: 0 22px
 
-  .slick-track
-    display: flex
-    flex-direction: column
 
 .all-projects-image
   display: flex
@@ -758,7 +754,7 @@
   margin: 0 0 0 -43px
   border-bottom: 1px solid #FFFFFF
   position: relative
-  z-index: 1
+  z-index: 3
   justify-content: space-between
 
   .nav-link
