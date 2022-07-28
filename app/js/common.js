@@ -44,23 +44,35 @@ $('.why-trusted-navigation-slider').slick({
     arrows: false,
     focusOnSelect: true,
     asNavFor: '.why-trusted-slider, .why-trusted-images-slider',
+    // prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
     responsive: [
         {
             breakpoint: 992,
             settings: {
                 slidesToShow: 5,
+                arrows: true
             }
         },
         {
             breakpoint: 768,
             settings: {
                 slidesToShow: 3,
+                arrows: true
             }
         },
         {
             breakpoint: 576,
             settings: {
+                slidesToShow: 3,
+                arrows: true
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
                 slidesToShow: 2,
+                arrows: true
             }
         }
     ]

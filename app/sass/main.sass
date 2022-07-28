@@ -8,6 +8,8 @@
   box-shadow: none
   overflow: hidden
   transition: all .4s linear
+  .btn-calculate
+    display: none
   &:before
     content: ''
     position: absolute
@@ -28,6 +30,8 @@
       padding: 10px 155px 132px
       .btn
         display: flex
+      .btn-calculate
+        display: none
       h3
         font-size: 50px
         margin: 0 0 15px
@@ -65,6 +69,34 @@
 .as-shadow
   box-shadow: none
 
+.as-pagination-buttons
+  background: #000
+  padding: 19px 25px
+  align-items: center
+  justify-content: flex-start
+  display: none
+  position: relative
+  z-index: 1
+
+
+.as-has-buttons
+  margin: 0
+
+.as-pagination-button
+  width: 12px
+  height: 2px
+  background: #D9D9D9
+  margin: 0 9px 0 0
+  transition: .3s ease
+  border: none
+    radius: 0
+  &:last-child
+    margin: 0
+
+.as-pagination-buttons .as-selected
+  background: $accent
+  width: 71px
+
 /*==========  section accordion-slider end  ==========*/
 
 
@@ -74,6 +106,8 @@
   padding: 89px 0 20px
   position: relative
   overflow: hidden
+  display: flex
+  flex-direction: column
 
   h2
     max-width: 376px
@@ -129,6 +163,7 @@
       height: 100%
       object-fit: cover
 
+
 .why-trusted-navigation-slider
   padding: 0 0 0 60px
   font-weight: bold
@@ -139,6 +174,16 @@
 
   &__item
     cursor: pointer
+  .slick-arrow
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    stroke: #fff
+  .slick-next
+    right: 0
+  .slick-prev
+    display: none !important
+    left: 0
 
 .why-trusted-navigation
   padding: 39px 0
@@ -682,6 +727,11 @@
     margin: 27px 0 0
     display: none
     transition: .3s ease
+  img
+    display: none
+    transition: .3s ease
+    max-width: 700px
+    margin: 20px auto 0
 
 .technology-slider
   .slick-track, .slick-list

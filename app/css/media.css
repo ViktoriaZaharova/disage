@@ -222,6 +222,8 @@
     font-size: 20px;
     line-height: normal;
     max-width: none; }
+  .technology-slider .slick-current .technology-slider__item img {
+    display: block; }
   .nav-tabs {
     width: 100%;
     margin: 20px 0 0; }
@@ -403,7 +405,27 @@
     height: 60%; }
   .homescript-body-text {
     font-size: 14px;
-    line-height: normal; } }
+    line-height: normal; }
+  .nav-tabs {
+    line-height: 1.5; }
+  .why-trusted-images-slider {
+    width: calc(100% + 30px);
+    margin: 0 -15px 22px; }
+  .why-trusted-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .why-trusted-wrapper .counter-slide {
+      margin: 0; }
+  .why-trusted-slider {
+    width: calc(100% - 60px);
+    padding: 0 0 0 19px;
+    margin: 0; }
+  .why-trusted-navigation-slider__item {
+    max-width: 200px; } }
 
 @media only screen and (max-width: 768px) {
   h2 {
@@ -519,22 +541,73 @@
     bottom: 0; } }
 
 @media only screen and (max-width: 576px) {
+  .header-top {
+    padding: 0; }
+  .logo {
+    max-width: 100px; }
+  .header-box {
+    font-size: 12px; }
+  .phone {
+    font-size: 14px; }
+  .btn-burger {
+    background: #03B3DA;
+    margin: 0 -15px 0 0;
+    width: 56px;
+    height: 56px;
+    padding: 10px 14px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .btn-burger span {
+      width: 27px;
+      margin: 0 0 6px; }
+      .btn-burger span:last-child {
+        margin: 0; }
   .as-panel__content {
-    padding: 15px;
-    display: none; }
+    padding: 24px; }
     .as-panel__content h3 {
-      font-size: 14px; }
+      font-weight: normal;
+      font-size: 13px;
+      white-space: nowrap;
+      -webkit-transition: all .4s linear;
+      transition: all .4s linear;
+      bottom: 100%;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
     .as-panel__content .box-text {
-      font-size: 12px; }
+      font-size: 12px;
+      display: none; }
     .as-panel__content .btn {
-      margin: 15px 0 0; }
+      margin: 15px 0 0;
+      display: none; }
   .as-panel.as-opened .as-panel__content {
     display: block;
     padding: 15px; }
     .as-panel.as-opened .as-panel__content h3 {
-      font-size: 16px; }
+      font-weight: bold;
+      font-size: 17px;
+      -webkit-transform: none;
+              transform: none;
+      white-space: normal; }
     .as-panel.as-opened .as-panel__content .box-text {
-      font-size: 14px; }
+      display: none; }
+    .as-panel.as-opened .as-panel__content .btn {
+      display: none; }
+    .as-panel.as-opened .as-panel__content .btn-calculate {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .as-pagination-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   h2 {
     font-size: 24px; }
   .why-trusted-navigation-slider__item {
@@ -590,7 +663,14 @@
     width: 24px;
     height: 12px; }
   .why-trusted {
-    padding: 60px 0 40px; }
+    padding: 60px 0 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .showroom h2 {
     font-size: 34px; }
   .showroom .btn {
@@ -631,7 +711,9 @@
     font-size: 16px;
     line-height: normal; }
   .personal-cinema-tabs {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .nav-tabs {
+    line-height: 1.7; } }
 
 @media only screen and (max-width: 480px) {
   .mobile-menu {
@@ -641,11 +723,11 @@
   h1 {
     font-size: 40px; }
   .showroom h2 {
-    font-size: 28px; } }
+    font-size: 28px; }
+  .why-trusted-navigation-slider__item {
+    font-size: 12px; } }
 
 @media only screen and (max-width: 420px) {
-  header .header-box {
-    display: none; }
   header .logo {
     margin: 0 auto 0 0; }
   .why-trusted-navigation-slider__item {
@@ -663,7 +745,10 @@
     max-width: none; }
   .reviews-box .position {
     margin: 5px 0 0;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .why-trusted-navigation-slider__item {
+    font-size: 12px;
+    max-width: 110px; } }
 
 @media only screen and (min-width: 1200px) {
   .personal-cinema-navigation-slider .slick-track {
