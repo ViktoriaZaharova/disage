@@ -83,6 +83,23 @@ $('.why-trusted-slider').slick({
     fade: true,
     arrows: false,
     asNavFor: '.why-trusted-images-slider',
+    dots: true,
+    appendDots: '.counter-slide',
+    customPaging: function(slider, i) {
+        var current = i + 1;
+        current = current < 10 ? + current : current;
+
+        var total = slider.slideCount;
+        total = total < 10 ? + total : total;
+
+        return (
+            '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
+            <span class="slick-dots-current">' + current + '</span>\
+			<span class="slick-dots-separator">/</span>\
+			<span class="slick-dots-total">' + total + '</span>\
+		</button>'
+        );
+    }
 });
 
 $('.why-trusted-images-slider').slick({
@@ -93,13 +110,13 @@ $('.why-trusted-images-slider').slick({
 });
 
 //auto counter total//
-let homeSlider = $('.why-trusted-slider');
-
-$('.counter-slide__default1').text("/" + homeSlider.slick("getSlick").slideCount);
-
-homeSlider.on('afterChange', function (event, slick, currentSlide) {
-    $(".counter-slide__cp1").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
-});
+// let homeSlider = $('.why-trusted-slider');
+//
+// $('.counter-slide__default1').text("/" + homeSlider.slick("getSlick").slideCount);
+//
+// homeSlider.on('afterChange', function (event, slick, currentSlide) {
+//     $(".counter-slide__cp1").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
+// });
 
 
 $('.technology-slider').slick({
@@ -111,6 +128,7 @@ $('.technology-slider').slick({
     focusOnSelect: true,
     adaptiveHeight: true,
     asNavFor: '.technology-images-slider',
+
 });
 
 $('.technology-images-slider').slick({
@@ -894,6 +912,7 @@ $('.personal-cinema-slider9').slick({
     fade: true,
     arrows: false,
     dots: true,
+    infinite: false,
     asNavFor: '.personal-cinema-images9',
     responsive: [
         {
