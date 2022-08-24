@@ -25,11 +25,11 @@
     height: 444px;
     mix-blend-mode: multiply; }
   .as-panel.as-opened .as-panel__content {
-    opacity: 1;
     -webkit-transition: opacity 0.7s linear;
     transition: opacity 0.7s linear;
       -webkit-transition-delay: 1s;
-              transition-delay: 1s; }
+              transition-delay: 1s;
+    padding: 10px 155px 132px; }
     .as-panel.as-opened .as-panel__content .btn {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -46,10 +46,9 @@
   .as-panel__content {
     position: absolute;
     left: 0;
-    opacity: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px 155px 132px;
+    padding: 20px 60px 100px;
     color: #fff; }
     .as-panel__content .btn {
       display: none;
