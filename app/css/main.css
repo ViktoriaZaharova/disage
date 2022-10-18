@@ -158,32 +158,48 @@
   line-height: 22px;
   max-width: 379px; }
 
-.counter-slide .slick-dots {
-  margin: 0;
-  width: 100%; }
-  .counter-slide .slick-dots li {
-    height: auto;
-    margin: 0; }
-  .counter-slide .slick-dots li:not(.slick-active) {
-    display: none; }
-  .counter-slide .slick-dots li.slick-active {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background: transparent;
-    color: #fff; }
-  .counter-slide .slick-dots button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: transparent;
-    color: #fff; }
+.counter-slide {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .counter-slide .slick-dots {
+    margin: 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+    .counter-slide .slick-dots li {
+      height: auto;
+      margin: 0; }
+    .counter-slide .slick-dots li:not(.slick-active) {
+      display: none; }
+    .counter-slide .slick-dots li.slick-active {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      background: transparent;
+      color: #fff; }
+    .counter-slide .slick-dots button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background: transparent;
+      color: #fff; }
+  .counter-slide .slick-arrow {
+    z-index: 1;
+    stroke: #fff; }
+  .counter-slide .slick-prev {
+    margin: 0 10px 0 30px; }
+
+.why-trusted-wrapper .slick-dots {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
 
 .why-trusted-images-slider {
   min-width: 1288px;

@@ -81,7 +81,10 @@ $('.why-trusted-navigation-slider').slick({
 $('.why-trusted-slider').slick({
     slidesToShow: 1,
     fade: true,
-    arrows: false,
+    arrows: true,
+    appendArrows: '.why-trusted-wrapper .counter-slide',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     asNavFor: '.why-trusted-images-slider',
     dots: true,
     appendDots: '.counter-slide',
@@ -99,7 +102,15 @@ $('.why-trusted-slider').slick({
 			<span class="slick-dots-total">' + total + '</span>\
 		</button>'
         );
-    }
+    },
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
 });
 
 $('.why-trusted-images-slider').slick({
